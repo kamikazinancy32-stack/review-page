@@ -108,6 +108,22 @@ h1 span, .section-heading h2 span { color: #8b9b65; }
 .closing-star { position: absolute; right: 8%; bottom: -76px; color: #30372a; font-size: 220px; }
 .site-footer { max-width: 1240px; min-height: 82px; padding: 0 34px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 15px; color: #81857d; font-size: 9px; }
 .footer-brand { color: var(--ink); font-size: 19px; }.footer-brand .brand-mark { width: 25px; height: 25px; font-size: 17px; }.site-footer p { margin: 0; }
+button { font: inherit; cursor: pointer; }
+.request-dialog { width: min(490px, calc(100% - 32px)); max-height: calc(100% - 32px); padding: 0; overflow: auto; border: 1px solid #e7e8df; border-radius: 12px; color: var(--ink); background: var(--paper); box-shadow: 0 25px 80px #14171040; }
+.request-dialog::backdrop { background: #20231f88; backdrop-filter: blur(3px); }
+.request-form { position: relative; padding: 35px; }
+.dialog-close { width: 34px; height: 34px; position: absolute; top: 20px; right: 20px; border: 1px solid var(--line); border-radius: 50%; color: var(--ink); background: white; font-size: 23px; line-height: 1; }
+.request-form .eyebrow { padding-right: 35px; font-size: 9px; }
+.request-form h2 { margin: 0 0 9px; font: 600 27px/1.2 Manrope, sans-serif; letter-spacing: -1px; }
+.dialog-intro { margin-bottom: 22px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+.request-form label { display: block; margin: 15px 0 6px; font-size: 11px; font-weight: 700; }
+.request-form input, .request-form textarea { width: 100%; padding: 11px 12px; border: 1px solid #dfe1d7; border-radius: 6px; color: var(--ink); background: #fff; font: 12px "DM Sans", sans-serif; }
+.request-form input:focus, .request-form textarea:focus, .dialog-close:focus-visible { outline: 2px solid #a8c93b; outline-offset: 2px; }
+.request-form textarea { resize: vertical; }
+.submit-button { width: 100%; margin-top: 20px; }
+.form-status { min-height: 0; margin: 0; color: #536a1e; font-size: 11px; line-height: 1.6; }
+.form-status:not(:empty) { margin-top: 14px; }
+.demo-note { margin: 13px 0 0; color: #85897f; font-size: 9px; line-height: 1.6; }
 
 @media (max-width: 760px) {
   .site-header { height: 70px; padding: 0 21px; }.main-nav { gap: 18px; font-size: 11px; }.header-cta { display: none; }
@@ -116,6 +132,7 @@ h1 span, .section-heading h2 span { color: #8b9b65; }
   .section-wrap { padding: 75px 24px 80px; }.feature-grid { grid-template-columns: 1fr; }.feature-card { min-height: 275px; }.feature-illustration { height: 90px; }
   .closing-section { padding: 58px 24px; align-items: flex-start; flex-direction: column; }.closing-star { right: 1%; bottom: -65px; font-size: 160px; }
   .site-footer { padding: 20px 24px; flex-wrap: wrap; }.site-footer p { order: 3; width: 100%; }
+  .request-form { padding: 28px 23px; }
 }
 @media (max-width: 430px) {
   .main-nav { gap: 13px; font-size: 10px; }.brand { font-size: 21px; }.brand-mark { width: 27px; height: 27px; }
